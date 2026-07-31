@@ -1,0 +1,35 @@
+{
+  "name": "sanchari-backend",
+  "version": "1.0.0",
+  "description": "Sanchari Backend API - LangGraph AI Travel Planner Server",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "seed:images": "node scripts/seedDestinationImages.mjs"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.0",
+    "@langchain/groq": "^0.1.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@supabase/supabase-js": "^2.48.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.6.1",
+    "ioredis": "^5.4.2",
+    "node-cron": "^4.6.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
